@@ -24,6 +24,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     //print_r($postBody);
     WriteToLog($postBody);
 
+    
+    // Answer to BotXo - Set segment
+    //echo ('{"segment": "'.$retVal.'"}');
+    
+    
+
+
 } else {
     http_response_code(405);
 }
