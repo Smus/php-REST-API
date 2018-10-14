@@ -8,13 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $postBody = file_get_contents('php://input');
     $postBody = json_decode($postBody);
 
-    ////// BotXO
-    //// customVariables data
-    //print_r( $postBody->customVariables );
-
-    //// extracted data
-    //print_r( $postBody->extracted );
-
     if ($postBody) {
         http_response_code(200);
     } else {
@@ -25,8 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     WriteToLog($postBody);
 
     
-    // Answer to BotXo - Set segment
-    //echo ('{"segment": "'.$retVal.'"}');
+    
     
     
 
